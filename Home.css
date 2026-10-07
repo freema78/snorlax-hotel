@@ -1,0 +1,228 @@
+/* =========================
+   HEADER
+   ========================= */
+
+   header {
+    background-color: #0a7de9;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  h1 {
+    margin-bottom: 5px;
+  }
+  
+  
+  /* =========================
+     GENERAL PAGE
+     ========================= */
+  
+  body {
+    background-color: #ffffff;
+    margin: 0;
+  }
+  
+  main {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  
+  /* =========================
+     NAVIGATION
+     ========================= */
+  
+  .site-nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .site-nav a {
+    display: block;
+    padding: 12px 20px;
+    text-align: center;
+    border-radius: 999px;
+    text-decoration: none;
+    color: #0a7de9;
+    font-weight: 600;
+  }
+  
+  .site-nav a:hover,
+  .site-nav a.active {
+    background-color: #0a7de9;
+    color: white;
+  }
+  
+  
+  /* =========================
+     VIDEO AND GOOGLE MAP
+     ========================= */
+  
+  .media-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  
+  
+  /* =========================
+     LISTS / FLEXBOX
+     ========================= */
+  
+  .list-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+  }
+  
+  .list-column {
+    background-color: #0a7de9;
+    width: 220px;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .list-column h3 {
+    margin-top: 0;
+  }
+  
+  .list-column ul {
+    text-align: left;
+  }
+  
+  
+  /* =========================
+     PRICING TABLE
+     ========================= */
+  
+  .pricing {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+  
+  .pricing th,
+  .pricing td {
+    padding: 16px 20px;
+    text-align: left;
+  }
+  
+  .pricing thead {
+    background: #0a7de9;
+    color: white;
+  }
+  
+  .pricing tbody tr:nth-child(even) {
+    background: #bac0e8;
+  }
+  
+  
+  /* =========================
+     FOOTER
+     ========================= */
+  
+  footer {
+    background-color: #0a7de9;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+  }
+  
+  
+  /* =========================
+     SOCIAL MEDIA BUTTONS
+     ========================= */
+  
+  .social-buttons a {
+    display: inline-block;
+    margin: 5px;
+    padding: 10px 15px;
+    background-color: white;
+    color: #1683e6;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  .social-buttons a:hover {
+    background-color: #dddddd;
+  }
+  
+  
+  /* =========================
+     REGISTRATION FORM
+     ========================= */
+  
+  form {
+    width: 500px;
+    margin: auto;
+    padding: 25px;
+    background-color: #1683e6;
+    border-radius: 10px;
+  }
+  
+  form label {
+    display: inline-block;
+    width: 180px;
+    text-align: right;
+    margin-right: 10px;
+  }
+  
+  form input,
+  form textarea {
+    padding: 8px;
+    margin: 5px;
+  }
+  
+  form input[type="submit"],
+  form input[type="reset"] {
+    background-color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+  }
+  
+  
+  /* =========================
+     RESPONSIVE DESIGN
+     ========================= */
+  
+  @media screen and (max-width: 600px) {
+  
+    /* Makes registration form fit on a phone */
+    form {
+      width: 90%;
+      padding: 15px;
+    }
+  
+    /* Moves form labels above the inputs */
+    form label {
+      display: block;
+      width: auto;
+      text-align: left;
+      margin: 5px 0;
+    }
+  
+    /* Makes form inputs fit the phone screen */
+    form input,
+    form textarea {
+      width: 90%;
+      box-sizing: border-box;
+    }
+  
+    /* Stacks navigation buttons vertically on a phone */
+    .site-nav ul {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+  
+  }
